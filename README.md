@@ -53,31 +53,18 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 Developed by:Sarankumar.V RegisterNumber:24010668
 ```
 module jkflipflop(j,k,clk,q,qbar);
-
 input j,k,clk;
-
 output reg q,qbar;
-
 initial
-
 begin
-
 q=1'b0;
-
 q=1'b1;
-
 end
-
 always @(posedge clk)
-
 begin
-
 q<=(j&~q)|(~k&q);
-
 qbar<=~q;
-
 end
-
 endmodule
 ```
 
@@ -87,7 +74,6 @@ endmodule
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
 ![Screenshot 2024-12-18 203123](https://github.com/user-attachments/assets/eba41f55-34e7-49ae-be7f-b3eee8bacf70)
-
 
 **RESULTS**
 Thus the truth table of JKFLIPFLOP in Quartus II using Verilog programming are studied, verified and executed successfully.
